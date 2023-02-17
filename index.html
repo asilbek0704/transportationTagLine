@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+	<link rel="stylesheet" href="./style/base.css">
+	<link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+	<!-- Начало: Данный блок удалять нельзя -->
+	<style>
+		.maketforfigma {
+			flex: 0 0 auto;
+			/*background: #303b44;*/
+			/*background: #5CDB95;*/
+			background: #313a46;
+			font-weight: bold;
+			display: flex;
+		}
+
+		.maketforfigma img {
+			border-radius: 10px;
+			margin: 4px 0 0 4px;
+		}
+
+		.maketforfigma p {
+			font-family: serif !important;
+			margin: .775rem 0;
+			/*color: #fff;*/
+			/*color: #05386B;*/
+			color: #98a6ad;
+			text-decoration: none;
+			letter-spacing: .01875rem;
+			font-size: .775rem;
+			padding: 0 10px;
+			line-height: 0.70rem;
+			font-weight: bold;
+		}
+
+		.maketforfigma p>a {
+			/*color: #08ff00;*/
+			/*color: #EDF5E1;*/
+			color: #bbe4f0;
+			font-weight: bold;
+			font-family: serif !important;
+			text-decoration: underline;
+		}
+
+		.maketforfigma p>a:hover {
+			/*color: #ffa001*/
+			/*color: #379683*/
+			color: #ffffff;
+		}
+
+		.main {
+			flex: 1 0 auto;
+		}
+
+		html {
+			height: 100%;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+	<div class="maketforfigma">
+		<a href="https://t.me/s/FigmaToHTML" target="_blank">
+			<img src="logo.png">
+		</a>
+		<div>
+			<p>
+				Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+					href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+			</p>
+			<p>
+				При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай
+					за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+				<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+			</p>
+		</div>
+	</div>
+	<!-- Конец -->
+
+	<div class="main">
+		<header class="header">
+			<div class="info">
+				<div class="info-container container">
+					<div class="info-langs">
+						<button class="info-langs__lang active">РУС</button>
+						<button class="info-langs__lang">ENG</button>
+						<button class="info-langs__lang">FR</button>
+					</div>
+					<a class="info-tel" href="tel:+88001234567">8 (800) 123-45-67</a>
+					<a class="info-mail" href="mailto:sales@log.ru">sales@log.ru</a>
+				</div>
+			</div>
+
+			<nav class="nav container">
+
+				<div class="nav-about">
+					<a href="index.html" class="logo">
+						<img src="./images/logo.png" alt="">
+					</a>
+
+					<div class="vertical-line"></div>
+
+					<a href="#!" class="offices">
+						<img class="location" src="./images/header/location.png" alt="">
+						Наши офисы
+					</a>
+				</div>
+
+				<ul>
+					<li class="nav-list"><a href="#services" class="nav-link">услуги</a></li>
+					<li class="nav-list"><a href="#about" class="nav-link">О компании</a></li>
+					<li class="nav-list"><a href="#!" class="nav-link">вакансии</a></li>
+					<li class="nav-list"><a href="#footer" class="nav-link">контакты</a></li>
+				</ul>
+
+
+
+			</nav>
+		</header>
+
+		<main class="main">
+			<div class="banner">
+				<video src="./video/banner.mp4" poster="./images/banner/banner.jpg" class="banner-video" muted>
+				</video>
+				<div class="overlay"></div>
+				<div class="banner-about">
+					<h1 class="banner-title">Грузовые перевозки</h1>
+					<p class="banner-text">Перевозка крупногабаритных грузов по России и Европе. Полное экспедирование,
+						страхование, упаковка и хранение грузов</p>
+				</div>
+				<img class="mouse" src="images/mouse.png" alt="">
+
+			</div>
+
+			<section class="transportation">
+				<div class="container">
+					<div class="transportation-about">
+						<div class="horizontal-line"></div>
+						<h2 class="transportation-title">грузоперевозки по европе</h2>
+						<p class="transportation-text">Страны Евросоюза, а также Украина,
+							Белоруссия со всеми документами.</p>
+						<a class="more" href="#!">ПОДРОБНЕЕ</a>
+					</div>
+					<img class="truck" data-amountOfImg="4" src="./images/section(transportation)/truck-1.png" alt="">
+					<div class="controls">
+						<button class="next">След <img src="./images/next.png" alt=""></button>
+						<button class="prev"><img src="./images/prev.png" alt=""> Назад</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="services container">
+
+				<div class="horizontal-line"></div>
+
+				<h2 class="services-title">услуги</h2>
+
+				<div class="services-items">
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+					<div class="services-items__item">
+						<div class="services-item__icon">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M28.8926 0.0731982L25.718 1.51816C25.5147 1.61199 25.3271 1.74023 25.1676 1.89974L19.9945 7.07597L2.17947 4.93979C1.85733 4.90226 1.53205 5.01173 1.30374 5.24317L0.312277 6.23463C-0.213166 6.76008 -0.0505287 7.64832 0.628168 7.9517L13.3952 13.6753L9.72958 17.3409H3.32731C3.04583 17.3409 2.77685 17.4535 2.57668 17.6505L2.04186 18.1884C1.51016 18.7201 1.68531 19.6177 2.37339 19.9118L7.77481 22.2262L10.0893 27.6276C10.3833 28.3157 11.284 28.4909 11.8126 27.9592L12.3505 27.4212C12.5507 27.221 12.6602 26.9521 12.6602 26.6706V20.2683L16.3258 16.6027L22.0493 29.3729C22.3527 30.0516 23.2409 30.2142 23.7664 29.6888L24.7578 28.6973C24.9893 28.4659 25.0987 28.1437 25.0612 27.8216L22.9219 10.0066L28.0981 4.83036C28.2577 4.67085 28.3859 4.48632 28.4797 4.27989L29.9247 1.10535C30.2281 0.451642 29.5525 -0.227054 28.8926 0.0731982Z"
+									fill="currentColor" />
+							</svg>
+						</div>
+						<p class="services-item__text">Авиаперевозки</p>
+						<div class="services-overlay"></div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="about" class="about">
+				<div class="container">
+					<div class="about-company">
+						<div class="horizontal-line"></div>
+						<h2 class="about-company__title">О компании</h2>
+						<p class="about-company__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+							вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+							века.
+							В
+							то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+							используя
+							Lorem
+							Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений
+							пять
+							веков, но и перешагнул в электронный дизайн.</p>
+					</div>
+					<div class="about-statistics">
+						<div class="about-statistics__block">
+							<span class="statistics__block-number">48</span>
+							<p class="statistics__block-text">офисов</p>
+							<p class="statistics__block-extra">В Европе и СНГ</p>
+							<div class="backSide hidden">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit, mollitia cum
+									eligendi voluptas sapiente delectus.</p>
+								<img src="./images/section(about)/QR.jpg" alt="">
+							</div>
+						</div>
+						<div class="about-statistics__block">
+							<span class="statistics__block-number">361</span>
+							<p class="statistics__block-text">грузовиков</p>
+							<p class="statistics__block-extra">Volvo, Scania</p>
+							<div class="backSide hidden">
+								<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis hic veniam
+										repudiandae et aliquid, eligendi illum.</p> -->
+								<img src="./images/section(about)/QR.jpg" alt="">
+								<a href="#!">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+						<img src="./images/section(about)/about-img.jpg" alt="" class="about-statistics__img">
+						<img src="./images/section(about)/about-img2.jpg" alt="" class="about-statistics__img">
+						<div class="about-statistics__block">
+							<span class="statistics__block-number">1500</span>
+							<p class="statistics__block-text">сотрудников</p>
+							<p class="statistics__block-extra">профессионалов</p>
+							<div class="backSide hidden">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti velit, mollitia cum
+									eligendi voluptas.</p>
+								<!-- <img src="./images/section(about)/QR.jpg" alt=""> -->
+								<a href="#!">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="map">
+				<div class="location">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2118.1909625197422!2d30.372511569103914!3d59.927063347680935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631b90326d2bd%3A0x88c63281606bcb9b!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEyN9CVLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTEwMjQ!5e0!3m2!1sru!2s!4v1628012236270!5m2!1sru!2s"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<div class="map-overlay"></div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer" class="footer">
+			<div class="container">
+				<a href="index.html" class="logo">
+					<img src="./images/logo.png" alt="">
+				</a>
+
+				<div class="footer-info">
+					<a href="#!" class="footer-info__location">123456, Санкт-Петербург, Невский пр-кт 127</a>
+					<a href="mailto:sales@log.ru" class="footer-info__mail">sales@log.ru</a>
+				</div>
+
+				<div class="footer-contacts">
+					<a href="tel:+78123445665" class="footer-contacts__tel">+7 (812) 344-56-65</a>
+					<a href="tel:+78123555665" class="footer-contacts__tel">+7 (812) 355-56-65</a>
+				</div>
+
+				<p class="dev-info">
+					Разработано - D-E-N.ru
+				</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="./script/script.js"></script>
+</body>
+
+</html>
